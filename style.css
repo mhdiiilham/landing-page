@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+#name {
+  font-size: 5em;
+  margin: 0;
+  padding: 0;
+}
+
+#name-header {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+#line {
+  border: 2px solid yellow;
+  width: 50%;
+  margin-top: 0;
+}
+
+.other-link {
+  margin: 1em;
+}
