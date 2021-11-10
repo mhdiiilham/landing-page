@@ -6,11 +6,9 @@
 body {
   background-image: url("https://img.freepik.com/free-photo/black-concrete-wall_24972-1046.jpg?size=626&ext=jpg") ;
   background-repeat: no-repeat;
-  background-size: 100%;
-  /* background-color: black; */
-  background-position: center;
+  /* background-size: 100%; */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   color: whitesmoke;
 }
 
@@ -27,7 +25,7 @@ body {
 }
 
 #name {
-  font-size: 3em;
+  font-size: 1.5em;
   padding: 5%;
   margin: 0;
   padding: 0;
@@ -37,6 +35,10 @@ body {
   margin: 0;
   padding: 0;
 
+}
+
+#before-other-link {
+  margin-bottom: 5em;
 }
 
 
