@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | IaaS - Ilham as a Service</title>
+  <meta name="description" content="Page not found - IaaS - Ilham as a Service">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Additional styles specific to 404 page */
+    .error-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 60vh;
+      padding: 2rem;
+    }
+    
+    .error-code {
+      font-size: 8rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, var(--primary), #b57bff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .error-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .error-message {
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+    
+    .error-image {
+      max-width: 300px;
+      margin-bottom: 2rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <i data-lucide="server"></i>
+            <span>IaaS</span>
+          </div>
+          <nav class="main-nav">
+            <a href="/#services" class="nav-link">Services</a>
+            <a href="/#expertise" class="nav-link">Expertise</a>
+            <a href="/#about" class="nav-link">About</a>
+            <a href="/#contact" class="nav-link">Contact</a>
+          </nav>
+          <a href="/#contact" class="button primary-button">Hire Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-message">The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
+        <div class="button-group">
+          <a href="https://muhammadilham.xzy" class="button primary-button">
+            Back to Home
+            <i data-lucide="home"></i>
+          </a>
+          <a href="https://muhammadilham.xyz/#contact" class="button outline-button">
+            Contact Me
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <i data-lucide="server"></i>
+              <span>IaaS</span>
+              <span class="copyright">© <script>document.write(new Date().getFullYear())</script> Ilham as a Service. All rights reserved. Built with <a href="https://v0.dev/">v0 by Vercel</a></span>
+            </div>
+            <div class="footer-social">
+              <a href="https://github.com/mhdiiilham" class="footer-social-link" aria-label="GitHub">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-ilham-491a99194/" class="footer-social-link" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="https://x.com/w8rloO" class="footer-social-link" aria-label="Twitter">
+                <i data-lucide="twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+    </footer>
+  </div>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
