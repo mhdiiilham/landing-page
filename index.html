@@ -31,11 +31,13 @@
   
   <!-- This actually applies the CSS to the page (keep this!) -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="experience.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="main.js"></script>
 </head>
 <body>
   <div class="page-wrapper">
@@ -49,6 +51,7 @@
           <nav class="main-nav">
             <a href="#services" class="nav-link">Services</a>
             <a href="#expertise" class="nav-link">Expertise</a>
+            <a href="#experience" class="nav-link">Work Experience</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#contact" class="nav-link">Contact</a>
           </nav>
@@ -236,6 +239,125 @@
         </div>
       </section>
 
+      <section id="experience" class="experience-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge">Experience</div>
+            <h2>Work History</h2>
+            <p class="section-description">
+              My professional journey and projects that have shaped my expertise
+            </p>
+          </div>
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-date">2023 - 2025</div>
+                <h3 class="timeline-title">Mid Backend Engineer</h3>
+                <div class="timeline-company">AnyMind Group, Tokyo (Remote)</div>
+                <!-- <p class="timeline-description">
+                  Led the development of scalable microservices architecture using Go and Kubernetes.
+                  Designed and implemented RESTful APIs serving over 1M requests daily with 99.9% uptime.
+                </p> -->
+                <div class="timeline-tech">
+                  <span class="tech-badge">Go</span>
+                  <span class="tech-badge">Kotlin</span>
+                  <span class="tech-badge">TypeScript</span>
+                  <span class="tech-badge">Docker</span>
+                  <span class="tech-badge">Kubernetes</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">Google Cloud Platform</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-date">2021 - 2023</div>
+                <h3 class="timeline-title">Software Engineer Analyst - Backend</h3>
+                <div class="timeline-company">Amartha, Jakarta</div>
+                <!-- <p class="timeline-description">
+                  Developed and maintained backend services using NodeJS and Express.
+                  Implemented database optimization strategies that improved query performance by 40%.
+                </p> -->
+                <div class="timeline-tech">
+                  <span class="tech-badge">Go</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">MongoDB</span>
+                  <span class="tech-badge">Docker</span>
+                  <span class="tech-badge">Temenos T24</span>
+                  <span class="tech-badge">KrakenD</span>
+                  <span class="tech-badge">KeyCloack</span>
+                  <span class="tech-badge">Google Cloud Platform</span>
+                </div>
+              </div>
+            </div>
+            
+            <div id="older-experiences" class="collapsed">
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">2022 - 2022</div>
+                  <h3 class="timeline-title">Freelance Software Developer</h3>
+                  <div class="timeline-company">EngageRocket Pte Ltd, Singapore (Remote)</div>
+                  <!-- <p class="timeline-description">
+                    Developed and maintained backend services using NodeJS and Express.
+                    Implemented database optimization strategies that improved query performance by 40%.
+                  </p> -->
+                  <div class="timeline-tech">
+                    <span class="tech-badge">Go</span>
+                    <span class="tech-badge">Ruby on rails</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">AWS</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">2020 - 2021</div>
+                  <h3 class="timeline-title">Backend Developer</h3>
+                  <div class="timeline-company">KlikACC, Jakarta</div>
+                  <!-- <p class="timeline-description">
+                    Built and maintained web applications using PHP and Laravel.
+                    Collaborated with design team to implement responsive frontend interfaces.
+                  </p> -->
+                  <div class="timeline-tech">
+                    <span class="tech-badge">Go</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">Laravel</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">VueJS</span>
+                    <span class="tech-badge">NGINX</span>
+                    <span class="tech-badge">Jenkins</span>
+                    <span class="tech-badge">Google Cloud Platform</span>
+                    <span class="tech-badge">AWS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-toggle-container">
+            <button id="toggle-experiences" class="timeline-toggle-button">
+              <span class="show-more">Show more experiences</span>
+              <span class="show-less">Show less</span>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </button>
+          </div>
+
+          <div class="resume-download">
+            <a href="https://drive.google.com/file/d/1XsU8lxfUlEW1frX0ki-MGh31UhCSdcz9/view?usp=sharing" class="button outline-button" target="_blank">
+              <i data-lucide="file-text"></i>
+              Download Full Resume
+            </a>
+          </div>
+        </div>
+      </section>
+
       <!-- About Section -->
       <section id="about" class="about-section">
         <div class="container">
@@ -314,6 +436,10 @@
                   <div class="form-group">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Tell me about your project..."></textarea>
+                  </div>
+                   <!-- Netlify CAPTCHA will be rendered here -->
+                  <div class="form-group captcha-container">
+                    <div data-netlify-recaptcha="true"></div>
                   </div>
                   <button type="submit" class="button primary-button full-width">Send Message</button>
                 </form>

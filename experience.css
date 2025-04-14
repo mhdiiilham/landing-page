@@ -1,0 +1,184 @@
+/* Experience Section - Semi-transparent */
+.experience-section {
+  padding: 4rem 0 3rem;
+  background-color: rgba(30, 30, 42, 0.5);
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 45px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 3px solid var(--background);
+  top: 5px;
+  z-index: 1;
+}
+
+.timeline-date {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--muted);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: var(--muted-foreground);
+}
+
+.timeline-title {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.timeline-company {
+  color: var(--muted-foreground);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-description {
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.timeline-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.resume-download {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.resume-download .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Timeline Toggle Button */
+.timeline-toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.timeline-toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.timeline-toggle-button:hover {
+  background-color: var(--muted);
+  border-color: var(--primary);
+}
+
+.timeline-toggle-button .toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Collapsible section */
+#older-experiences {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+#older-experiences.collapsed {
+  max-height: 0;
+}
+
+#older-experiences.expanded {
+  max-height: 2000px; /* Adjust based on your content */
+}
+
+/* Show/hide text in toggle button */
+.timeline-toggle-button .show-less {
+  display: none;
+}
+
+.timeline-toggle-button.active .show-more {
+  display: none;
+}
+
+.timeline-toggle-button.active .show-less {
+  display: inline;
+}
+
+.timeline-toggle-button.active .toggle-icon {
+  transform: rotate(180deg);
+}
+/* Collapsible section */
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .timeline::before {
+    left: 50%;
+    margin-left: -1px;
+  }
+  
+  .timeline-item {
+    padding-left: 0;
+    margin-bottom: 4rem;
+  }
+  
+  .timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+  }
+  
+  .timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+  }
+  
+  .timeline-marker {
+    left: 50%;
+    margin-left: -8px;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-tech {
+    justify-content: flex-end;
+  }
+}

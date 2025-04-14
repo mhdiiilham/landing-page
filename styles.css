@@ -382,12 +382,6 @@ ul {
   margin-bottom: 1rem;
 }
 
-/* About Section */
-.about-section {
-  padding: 4rem 0 3rem;
-  background-color: rgba(30, 30, 42, 0.5);
-}
-
 .about-grid {
   display: grid;
   gap: 2rem;
@@ -555,6 +549,46 @@ ul {
   gap: 1rem;
 }
 
+/* Services Section - Semi-transparent */
+.services-section {
+  padding: 4rem 0 3rem;
+  background-color: rgba(30, 30, 42, 0.5);
+}
+
+/* Expertise Section - Solid */
+.expertise-section {
+  padding: 4rem 0 3rem;
+  background-color: var(--background); /* Solid dark background */
+}
+
+/* About Section - Solid (changed from semi-transparent) */
+.about-section {
+  padding: 4rem 0 3rem;
+  background-color: var(--background); /* Changed to solid dark background */
+}
+
+/* Contact Section - Semi-transparent */
+.contact-section {
+  padding: 4rem 0 3rem;
+  background-color: rgba(30, 30, 42, 0.5);
+}
+
+/* CAPTCHA container styling */
+.captcha-container {
+  margin: 1rem 0;
+}
+
+/* Make sure the CAPTCHA is responsive */
+.captcha-container iframe {
+  max-width: 100%;
+}
+
+/* Optional: Style the CAPTCHA container to match your form */
+.captcha-container > div {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
   h1 {
@@ -601,6 +635,7 @@ ul {
     height: 6rem;
   }
 }
+
 
 @media (min-width: 1024px) {
   .hero-section {
